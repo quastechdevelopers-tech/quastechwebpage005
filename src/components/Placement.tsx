@@ -87,7 +87,7 @@ const SectionHeading = ({ title, subtitle }: { title: string; subtitle?: string 
     <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
       {title}
     </h2>
-    <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+    <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
   </motion.div>
 );
 
@@ -96,7 +96,7 @@ const Subtitle = ({ text, showBadge = false }: { text: string, showBadge?: boole
     <h3 className="heading-subsection gradient-text-primary">
       {text}
     </h3>
-    <div className="mt-2 md:mt-3 h-0.5 w-20 md:w-24 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+    <div className="mt-2 md:mt-3 h-0.5 w-20 md:w-24 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
   </div>
 );
 
@@ -143,7 +143,7 @@ const Placement = () => {
               PLACEMENT SUCCESS
             </div>
             <Subtitle text="Quastech Stats at a Glance" />
-            {/* <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" /> */}
+            {/* <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" /> */}
           </motion.div>
 
           {/* 📊 Stats */}

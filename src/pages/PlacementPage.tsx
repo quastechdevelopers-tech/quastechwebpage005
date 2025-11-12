@@ -1,4 +1,4 @@
-﻿import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Users, Award, Target, Star, ChevronLeft, ChevronRight, Phone, Mail, CheckCircle2, FileText, Briefcase, Code, Terminal, GitBranch } from "lucide-react";
 import Header from "@/components/Header";
@@ -25,25 +25,29 @@ const students = [
     name: "Dipesh Sawant",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Dipesh sawant -Software Testing.png"
+    image: "/images/NewStudentReview/Dipesh sawant -Software Testing.png",
+    company:"Plan IT Company"
   },
   {
     name: "Nidhi Yelonde",
     role: "Full Stack Java Developer",
     course: "Full Stack Java Development",
-    image: "/images/NewStudentReview/Nidhi Yelonde - Full stack java Development.png"
+    image: "/images/NewStudentReview/Nidhi Yelonde - Full stack java Development.png",
+    company:"Plan IT Company"
   },
   {
     name: "Amey Pakhare",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Amey Pakhare-Software Testing.png"
+    image: "/images/NewStudentReview/Amey Pakhare-Software Testing.png",
+    company:"Plan IT Company"
   },
   {
     name: "Ashish Raut",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/ashish raut -Software Testing.png"
+    image: "/images/NewStudentReview/ashish raut -Software Testing.png",
+    company:"Plan IT Company"
   },
   {
     name: "Karishma Yadav",
@@ -188,11 +192,12 @@ const placementCategories = [
 const getPlacements = (category) => {
   if(category === 'all') {
     // Show first 16 students (all NewStudentReview images)
-    return students.slice(0, 16).map((student, i) => ({
+    return students.slice(0, 16).map((student) => ({
       name: student.name,
       role: student.role,
       image: student.image,
-      company: companyList[i % companyList.length],
+      company:student.company
+      //  company: companyList[i % companyList.length],
     }));
   } else if (category === 'software-testing') {
     // Software Testing: All students who completed Software Testing course
@@ -598,7 +603,7 @@ const PlacementPage = () => {
             <div className="flex flex-col gap-4">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="text-gray-700">
-                  <div className="heading-institute-md mb-3">Placement Drive by uvXcel</div>
+                  <div className="heading-institute-md mb-3">Placement Drive by Nimap Infotech</div>
                   <p className="text-gray-700 text-sm md:text-base max-w-3xl">
                     The campus placement drive is an opportunity for our Learners as well as companies to select the best & qualified candidate or company in a shorter period of time. Quastech is known in the market for providing the quality candidates and that is why 800+ companies have trusted us in hand picking the talent they require.
                   </p>
@@ -642,15 +647,15 @@ const PlacementPage = () => {
                   }}
                 >
                   {[
-                    { label: "PLACEMENT DRIVE", title: "Saleman Digital Automation Pvt. Ltd. – Recruitment Day", image: "/images/placementdrive/saleman digial automation Pvt\u00A0ltd.jpg", type: "image" },
+                    { label: "PLACEMENT DRIVE", title: "Saleman Digital Automation Pvt. Ltd. � Recruitment Day", image: "/images/placementdrive/saleman digial automation PVTLTD.jpg", type: "image" },
                     // { label: "PLACEMENTS", title: "Helping Learners Achieve Their Dream IT Jobs!", image: branchImages[1], type: "image" },
                     { label: "JOBS", title: "Conducting Megha Placement Drive for Students", video: "/uploads/TV Drive.mp4", type: "video" },
                     { label: "WELCOME", title: "Moment of the Warm Welcome", image: "/uploads/placementdrive01.jpg", type: "image" },
                     { label: "NSDC RECOGNITION", title: "Campus to Corporate Event with National Skill Development Corporation Congratulating Our Students", image: "/uploads/studentcertificate.jpg", type: "image" },
                     // { label: "MOCK", title: "Our Learners Appearing for Their Mock Interviews", image: branchImages[0], type: "image" },
-                    { label: "PLACEMENT DRIVE", title: "Cateina Technologies – Campus Hiring Drive", image: "/images/placementdrive/121222.jpg", type: "image" },
-                    { label: "PLACEMENT DRIVE", title: "Nimap Infotech – Interview Session", image: "/images/placementdrive/1212.jpg", type: "image" },
-                    { label: "PLACEMENT DRIVE", title: "RPJ Associates – Talent Acquisition", image: "/images/placementdrive/rpj associates.jpg", type: "image" },
+                    { label: "PLACEMENT DRIVE", title: "Cateina Technologies � Campus Hiring Drive", image: "/images/placementdrive/121222.jpg", type: "image" },
+                    { label: "PLACEMENT DRIVE", title: "Nimap Infotech � Interview Session", image: "/images/placementdrive/1212.jpg", type: "image" },
+                    { label: "PLACEMENT DRIVE", title: "RPJ Associates � Talent Acquisition", image: "/images/placementdrive/rpj associates.jpg", type: "image" },
                   ].map((item, idx) => (
                     <SwiperSlide key={idx} className="!w-full">
                       <motion.div
@@ -841,7 +846,7 @@ const PlacementPage = () => {
                       src={item.image}
                       alt={item.name}
                       className="rounded-full w-20 h-20 object-cover mb-3 border-4 border-blue-200 bg-white shadow"
-                      whileHover={{ rotate: 360, scale: 1.1 }}
+                      whileHover={{  scale: 1.1 }}
                       transition={{ duration: 0.5 }}
                     />
                     <div className="font-bold text-lg text-[#19376D] text-center mb-1">{item.name}</div>
@@ -1006,7 +1011,7 @@ const PlacementPage = () => {
                 <span className="text-xs font-semibold text-blue-700 tracking-widest">FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Everything you need to know about Placements
                 </span>
               </h2>
@@ -1089,7 +1094,7 @@ const PlacementPage = () => {
               >
                 <div className="relative">
                   <img
-                    src="/uploads/FAQ.png"
+                    src="/uploads/FAQ (1) (1) (1).png"
                     alt="Frequently Asked Questions about Placements"
                     className="w-full h-auto object-contain max-h-[580px]"
                   />
@@ -1105,3 +1110,4 @@ const PlacementPage = () => {
   );
 };
 export default PlacementPage;
+

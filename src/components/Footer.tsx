@@ -284,7 +284,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="lg:mt-[52px]"> {/* Align with other columns after title */}
+            <div className="mt-12 md:mt-16 lg:mt-[104px] xl:mt-[108px]"> {/* Align with Software Testing section */}
               <FooterSubTitle title="Fullstack Development" />
               <ul className="space-y-2">
                 {certificationCourses.fullstackDevelopment.map((link) => (

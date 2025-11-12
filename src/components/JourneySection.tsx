@@ -14,7 +14,7 @@ const JourneySection = () => {
           <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
             From Learning to Success
           </h2>
-          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
         </div>
         {/* Journey Banner - Edge to Edge */}
         {/* <motion.div
@@ -40,7 +40,7 @@ const JourneySection = () => {
           className="w-full"
         >
           <img 
-            src="/journeyplcement/image.png"
+            src="/journeyplcement\carrierpath (3) (1).png"
             alt="Career Path Journey" 
             className="w-full h-auto object-cover"
           />

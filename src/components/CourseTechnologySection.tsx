@@ -474,7 +474,7 @@ const CourseTechnologySection = ({
       <div className="container mx-auto px-4 relative">
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-3">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
               {title}
             </span>
           </h2>

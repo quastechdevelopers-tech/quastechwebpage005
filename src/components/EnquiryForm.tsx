@@ -100,7 +100,7 @@ const EnquiryForm = () => {
           <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
             Start Your Career Journey
           </h2>
-          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-start">

@@ -61,7 +61,7 @@ const WebGraphicDesigning = () => {
         
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-orange-500" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600  to-orange-500" />
           <div className="absolute inset-0 bg-black/20" />
           
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
@@ -134,7 +134,7 @@ const WebGraphicDesigning = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Course Overview
                 </span>
               </h2>
@@ -178,7 +178,7 @@ const WebGraphicDesigning = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Curriculum
                 </span>
               </h2>
@@ -213,7 +213,7 @@ const WebGraphicDesigning = () => {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Career Opportunities
                 </span>
               </h2>
@@ -239,7 +239,7 @@ const WebGraphicDesigning = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500">
+        <section className="py-20 bg-gradient-to-r from-blue-600  to-orange-500">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -284,6 +284,7 @@ const WebGraphicDesigning = () => {
 };
 
 export default WebGraphicDesigning;
+
 
 
 

@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
@@ -155,7 +155,7 @@ const BCA = () => {
   const curriculumModules = [
     {
       id: "semester-1",
-      title: "Semester 1 · Programming Foundation",
+      title: "Semester 1 � Programming Foundation",
       category: "#First Year",
       duration: "First Year",
       topics: [
@@ -171,7 +171,7 @@ const BCA = () => {
     },
     {
       id: "semester-2",
-      title: "Semester 2 · Data & Network Essentials",
+      title: "Semester 2 � Data & Network Essentials",
       category: "#First Year",
       duration: "First Year",
       topics: [
@@ -187,7 +187,7 @@ const BCA = () => {
     },
     {
       id: "semester-3",
-      title: "Semester 3 · Web & Linux Administration",
+      title: "Semester 3 � Web & Linux Administration",
       category: "#Second Year",
       duration: "Second Year",
       topics: [
@@ -205,7 +205,7 @@ const BCA = () => {
     },
     {
       id: "semester-4",
-      title: "Semester 4 · Advanced Programming & Cyber",
+      title: "Semester 4 � Advanced Programming & Cyber",
       category: "#Second Year",
       duration: "Second Year",
       topics: [
@@ -224,7 +224,7 @@ const BCA = () => {
     },
     {
       id: "semester-5",
-      title: "Semester 5 · Full Stack & Emerging Tech",
+      title: "Semester 5 � Full Stack & Emerging Tech",
       category: "#Third Year",
       duration: "Third Year",
       topics: [
@@ -242,7 +242,7 @@ const BCA = () => {
     },
     {
       id: "semester-6",
-      title: "Semester 6 · Career Launch & Project",
+      title: "Semester 6 � Career Launch & Project",
       category: "#Third Year",
       duration: "Third Year",
       topics: [
@@ -359,13 +359,12 @@ const BCA = () => {
                       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                     <span className="text-white font-semibold text-base">4.8 out of 5</span>
-                    <span className="text-white/80 text-sm">based on 18647 votes</span>
                   </div>
                   {/* Platform Ratings Row */}
                   <div className="flex items-center gap-3 flex-wrap mb-2">
                     {[
                       { icon: "G", label: "Google", rating: "4.2/5" },
-                      { icon: "⭐", label: "", rating: "4.8/5" },
+                      { icon: "?", label: "", rating: "4.8/5" },
                       { icon: "P", label: "", rating: "4.6/5" },
                       { icon: "Jd", label: "Justdial", rating: "4.3/5" },
                       { icon: "f", label: "Facebook", rating: "4.5/5" }
@@ -490,7 +489,7 @@ const BCA = () => {
                     <div>
                       <div className="relative">
                         <div className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                          <span className="text-lg">🇮🇳</span>
+                          <span className="text-lg">????</span>
                           <span className="text-gray-600 font-medium text-sm">(+91)</span>
                           <ChevronRight className="w-3 h-3 text-gray-400" />
                         </div>
@@ -536,7 +535,7 @@ const BCA = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Why Quastech BCA?
                 </span>
               </h2>
@@ -600,7 +599,7 @@ const BCA = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   BCA Program Curriculum
                 </span>
               </h2>
@@ -742,7 +741,7 @@ const BCA = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Benefits of Quastech BCA
                 </span>
               </h2>
@@ -790,7 +789,7 @@ const BCA = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Technologies & Tools You'll Master
                 </span>
               </h2>
@@ -947,7 +946,7 @@ const BCA = () => {
                 className="w-full md:w-[360px] lg:w-[420px] flex-shrink-0 text-center md:text-left mb-2 md:mb-0"
               >
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-3 md:mb-0">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Get exclusive access to career resources upon completion
                   </span>
                 </h2>
@@ -1031,7 +1030,7 @@ const BCA = () => {
                   className="mb-8"
                 >
                   <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       Mock Interviews
                     </span>
                     <div className="absolute bottom-0 left-0 w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"></div>
@@ -1075,7 +1074,7 @@ const BCA = () => {
                   className="mb-8"
                 >
                   <h3 className="text-xl md:text-2xl font-bold mb-8 text-center">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       How Quastech Mock Interview Works?
                     </span>
                   </h3>
@@ -1306,7 +1305,7 @@ const BCA = () => {
                       </label>
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg bg-gray-50">
-                          <span className="text-sm font-semibold">🇮🇳</span>
+                          <span className="text-sm font-semibold">????</span>
                           <span className="text-sm font-semibold">(+91)</span>
                         </div>
                         <Input
@@ -1354,7 +1353,7 @@ const BCA = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-gray-600">Phone (For Voice Call):</p>
-                        <p className="text-lg font-bold text-gray-800">+91-971 152 6942</p>
+                        <p className="text-lg font-bold text-gray-800">+918422800381</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -1363,7 +1362,7 @@ const BCA = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-gray-600">WhatsApp (For Call & Chat):</p>
-                        <p className="text-lg font-bold text-gray-800">+91-971 152 6942</p>
+                        <p className="text-lg font-bold text-gray-800">+918422800381</p>
                       </div>
                     </div>
                   </div>
@@ -1386,7 +1385,7 @@ const BCA = () => {
                 className="text-center mb-12"
               >
                 <h2 className="text-4xl md:text-5xl font-extrabold mb-6 relative inline-block">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Projects
                   </span>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-full"></div>
@@ -1486,7 +1485,7 @@ const BCA = () => {
               className="text-center mb-12"
             >
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative inline-block">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   TRAINING FEATURES
                 </span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-full"></div>
@@ -1623,7 +1622,7 @@ const BCA = () => {
                   className="mb-8"
                 >
                   <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       Hiring Partners
                     </span>
                   </h2>
@@ -1746,7 +1745,7 @@ const BCA = () => {
                   viewport={{ once: true }}
                   className="text-center lg:text-left"
                 >
-                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent mb-2">
                     800+
                   </div>
                   <div className="text-xl font-semibold text-gray-800">
@@ -1761,7 +1760,7 @@ const BCA = () => {
                   viewport={{ once: true }}
                   className="text-center lg:text-left"
                 >
-                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent mb-2">
                     10k+
                   </div>
                   <div className="text-xl font-semibold text-gray-800">
@@ -1786,7 +1785,7 @@ const BCA = () => {
               >
                 {/* Main Title */}
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Showcase your Course Completion Certificate to Recruiters
                   </span>
                 </h2>
@@ -1839,11 +1838,8 @@ const BCA = () => {
                       </motion.div>
                     ))}
                   </div>
-                </div>
-
-                {/* Call-to-Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <motion.button
+                </div>                <div className="flex flex-col sm:flex-row gap-4">
+                     {/* <motion.button
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -1856,7 +1852,7 @@ const BCA = () => {
                     className="bg-white border-2 border-blue-600 text-blue-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-50"
                   >
                     Get a Sample Certificate
-                  </motion.button>
+                  </motion.button> */}
                 </div>
               </motion.div>
 
@@ -1894,7 +1890,7 @@ const BCA = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Career Opportunities
                 </span>
               </h2>
@@ -1933,12 +1929,12 @@ const BCA = () => {
                 <span className="text-xs font-semibold text-blue-700 tracking-widest">FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Everything you need to know
                 </span>
               </h2>
               <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
-                Clear, concise answers about our Software Testing Training—curriculum, format, placement, and more.
+                Clear, concise answers about our Software Testing Training�curriculum, format, placement, and more.
               </p>
             </motion.div>
 
@@ -1983,13 +1979,13 @@ const BCA = () => {
                       <span className="text-gray-900">What is the course duration and weekly schedule?</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-6 text-gray-700 leading-relaxed">
-                      Typical duration is 10–14 weeks depending on the track. Sessions are planned on weekdays/weekends with additional practice and doubt-clearing support.
+                      Typical duration is 10�14 weeks depending on the track. Sessions are planned on weekdays/weekends with additional practice and doubt-clearing support.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="faq-5" className="group bg-white border border-blue-100 rounded-2xl mb-1 shadow-sm hover:shadow-lg transition-shadow">
                     <AccordionTrigger className="px-6 py-5 text-left font-semibold hover:no-underline">
-                      <span className="text-gray-900">Who can join—do I need coding experience?</span>
+                      <span className="text-gray-900">Who can join�do I need coding experience?</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-6 text-gray-700 leading-relaxed">
                       No prior coding is required for the Manual Testing track. Basic programming is introduced gradually for the Automation track with simple, guided practice.
@@ -2007,7 +2003,7 @@ const BCA = () => {
               >
                 <div className="relative">
                 <img
-                  src="/uploads/FAQ.png"
+                  src="/uploads/FAQ (1) (1) (1).png"
                   alt="Frequently Asked Questions"
                   className="w-full h-auto object-contain max-h-[580px]"
                 />
@@ -2018,7 +2014,7 @@ const BCA = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500">
+        <section className="py-8 md:py-12 bg-gradient-to-r from-blue-600  to-orange-500">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -2065,4 +2061,6 @@ const BCA = () => {
 };
 
 export default BCA;
+
+
 

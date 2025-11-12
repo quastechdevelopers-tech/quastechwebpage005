@@ -410,7 +410,7 @@ const About = () => {
           >
             <motion.div variants={itemVariants} className="section-header">
               <h2 className="heading-institute-lg">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Technologies We Master
                 </span>
               </h2>

@@ -221,7 +221,7 @@ const Courses = () => {
           <h2 className="heading-section gradient-text-primary mb-2 md:mb-3">
             Transform Your Career with AI Technology
           </h2>
-          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
         </motion.div>
 
         {/* Courses Slider with Professional Cards */}
@@ -266,7 +266,7 @@ const Courses = () => {
                     <div className="flex gap-3 sm:gap-4 mb-3 sm:mb-4 min-h-[85px]">
                       {/* Course Icon - Left Side */}
                       <motion.div 
-                        className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 via-purple-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/50 flex-shrink-0 relative overflow-hidden"
+                        className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600  to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/50 flex-shrink-0 relative overflow-hidden"
                         whileHover={{ scale: 1.15, rotate: 8 }}
                         transition={{ duration: 0.3 }}
                       >
@@ -461,7 +461,7 @@ const Courses = () => {
                     <div className="flex gap-3 md:gap-4 mb-3 md:mb-4 min-h-[90px]">
                       {/* Course Icon - Left Side */}
                       <motion.div 
-                        className="w-16 h-16 bg-gradient-to-br from-blue-600 via-purple-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/50 flex-shrink-0 relative overflow-hidden"
+                        className="w-16 h-16 bg-gradient-to-br from-blue-600  to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/50 flex-shrink-0 relative overflow-hidden"
                         whileHover={{ scale: 1.15, rotate: 8 }}
                         transition={{ duration: 0.3 }}
                       >

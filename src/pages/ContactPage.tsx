@@ -578,7 +578,7 @@ const ContactPage = () => {
               className="text-center mb-8"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Contact Departments
                 </span>
               </h2>
@@ -738,11 +738,11 @@ const ContactPage = () => {
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Visit Our Branches
                 </span>
               </h2>
-              <div className="h-1 w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 mb-3" />
+              <div className="h-1 w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500 mb-3" />
               <p className="text-lg text-slate-600">
                 Choose your nearest location
               </p>
@@ -844,3 +844,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+

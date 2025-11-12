@@ -63,7 +63,7 @@ const FAQSection = () => {
           <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
             Your Questions Answered
           </h2>
-          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500" />
+          <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
         </div>
 
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-6 lg:gap-8 max-w-7xl mx-auto items-end">
@@ -121,7 +121,7 @@ const FAQSection = () => {
               className="relative"
             >
               <img
-                src="/uploads/FAQ.png"
+                src="/uploads/FAQ (1) (1) (1).png"
                 alt="Frequently Asked Questions"
                 className="w-full h-auto object-contain max-h-[580px]"
               />

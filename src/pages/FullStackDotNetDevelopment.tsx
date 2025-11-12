@@ -156,7 +156,7 @@ const FullStackDotNetDevelopment = () => {
       description: "Connect with a vast network of successful alumni.",
     },
     {
-      title: "Multi-Domain Interviews",
+      title: " Interviews",
       icon: Users,
       secondaryIcon: HelpCircle,
       description: "Prepare for interviews across various domains.",
@@ -491,7 +491,6 @@ const FullStackDotNetDevelopment = () => {
                       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                     <span className="text-white font-semibold text-base">4.8 out of 5</span>
-                    <span className="text-white/80 text-sm">based on 18647 votes</span>
                   </div>
                   {/* Platform Ratings Row */}
                   <div className="flex items-center gap-3 flex-wrap mb-2">
@@ -540,7 +539,7 @@ const FullStackDotNetDevelopment = () => {
                       <div className="text-xs md:text-xl font-bold text-white leading-tight">Online/Offline</div><div className="text-white/80 text-[10px] md:text-xs mt-1">Format</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-base md:text-xl font-bold text-white">LMS</div><div className="text-white/80 text-[10px] md:text-xs mt-1">Life Time Access</div>
+                      <div className="text-base md:text-xl font-bold text-white">LMS</div><div className="text-white/80 text-[10px] md:text-xs mt-1">Only Access</div>
                     </div>
                   </div>
                 </motion.div>
@@ -668,7 +667,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Course Overview
                 </span>
               </h2>
@@ -682,7 +681,7 @@ const FullStackDotNetDevelopment = () => {
                 { icon: Target, title: ".NET Fundamentals", desc: "C#, OOP, collections, async & LINQ" },
                 { icon: Code, title: "ASP.NET Core & MVC", desc: "Routing, controllers, views, validations" },
                 { icon: TrendingUp, title: "EF & APIs", desc: "Entity Framework, SQL Server, REST APIs" },
-                { icon: Star, title: "Deployment & Testing", desc: "Unit/integration tests, CI/CD, cloud" }
+                { icon: Star, title: "Projcts ", desc: "Real world industry based projects" }
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -712,7 +711,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Full Stack .NET Development Curriculum
                 </span>
               </h2>
@@ -854,7 +853,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Key Highlights in Full Stack .NET Development
                 </span>
               </h2>
@@ -891,9 +890,9 @@ const FullStackDotNetDevelopment = () => {
             </div>
           </div>
         </section>
-
+ <CourseTechnologySection courseSlug="full-stack-dotnet-development" />
         {/* Tools & Technologies Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+        {/* <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -902,7 +901,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Tools & Technologies You'll Master in Full Stack .NET
                 </span>
               </h2>
@@ -911,9 +910,9 @@ const FullStackDotNetDevelopment = () => {
               </p>
             </motion.div>
 
-            {/* Sliding Technology Logos */}
+           
             <div className="relative overflow-hidden py-8">
-              {/* Gradient overlay for fade effect */}
+             
               <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               
@@ -932,7 +931,7 @@ const FullStackDotNetDevelopment = () => {
                 }}
                 style={{ width: "max-content" }}
               >
-                {/* .NET Development Tools & Technologies */}
+              
                 {[
                   { name: "C#", logo: "/coursesicons/html.jpg", color: "from-blue-500 to-blue-600" },
                   { name: ".NET Core", logo: "/coursesicons/python.jpg", color: "from-purple-500 to-purple-600" },
@@ -970,7 +969,7 @@ const FullStackDotNetDevelopment = () => {
                   </motion.div>
                 ))}
                 
-                {/* Duplicate set for seamless loop */}
+             
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -1007,7 +1006,7 @@ const FullStackDotNetDevelopment = () => {
                   </motion.div>
                 ))}
                 
-                {/* Third set for extra smoothness */}
+             
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -1046,7 +1045,7 @@ const FullStackDotNetDevelopment = () => {
               </motion.div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Career Resources Section */}
         <section className="py-8 md:py-12 bg-white overflow-hidden">
@@ -1060,7 +1059,7 @@ const FullStackDotNetDevelopment = () => {
                 className="w-full md:w-[360px] lg:w-[420px] flex-shrink-0 text-center md:text-left mb-2 md:mb-0"
               >
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-3 md:mb-0">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Get exclusive access to career resources upon completion
                   </span>
                 </h2>
@@ -1144,7 +1143,7 @@ const FullStackDotNetDevelopment = () => {
                   className="mb-8"
                 >
                   <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       Mock Interviews
                     </span>
                     <div className="absolute bottom-0 left-0 w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"></div>
@@ -1188,7 +1187,7 @@ const FullStackDotNetDevelopment = () => {
                   className="mb-8"
                 >
                   <h3 className="text-xl md:text-2xl font-bold mb-8 text-center">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       How Quastech Mock Interview Works?
                     </span>
                   </h3>
@@ -1415,7 +1414,7 @@ const FullStackDotNetDevelopment = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-gray-600">Phone (For Voice Call):</p>
-                        <p className="text-lg font-bold text-gray-800">+91-971 152 6942</p>
+                        <p className="text-lg font-bold text-gray-800">+918422800381</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -1424,7 +1423,7 @@ const FullStackDotNetDevelopment = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-gray-600">WhatsApp (For Call & Chat):</p>
-                        <p className="text-lg font-bold text-gray-800">+91-971 152 6942</p>
+                        <p className="text-lg font-bold text-gray-800">+918422800381</p>
                       </div>
                     </div>
                   </div>
@@ -1447,7 +1446,7 @@ const FullStackDotNetDevelopment = () => {
                 className="text-center mb-12"
               >
                 <h2 className="text-4xl md:text-5xl font-extrabold mb-6 relative inline-block">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Projects
                   </span>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-full"></div>
@@ -1547,7 +1546,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-12"
             >
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-6 relative inline-block">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   TRAINING FEATURES
                 </span>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 rounded-full"></div>
@@ -1684,7 +1683,7 @@ const FullStackDotNetDevelopment = () => {
                   className="mb-8"
                 >
                   <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                    <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                       Hiring Partners
                     </span>
                   </h2>
@@ -1807,7 +1806,7 @@ const FullStackDotNetDevelopment = () => {
                   viewport={{ once: true }}
                   className="text-center lg:text-left"
                 >
-                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent mb-2">
                     800+
                   </div>
                   <div className="text-xl font-semibold text-gray-800">
@@ -1822,7 +1821,7 @@ const FullStackDotNetDevelopment = () => {
                   viewport={{ once: true }}
                   className="text-center lg:text-left"
                 >
-                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent mb-2">
                     10k+
                   </div>
                   <div className="text-xl font-semibold text-gray-800">
@@ -1847,7 +1846,7 @@ const FullStackDotNetDevelopment = () => {
               >
                 {/* Main Title */}
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
-                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                     Showcase your Course Completion Certificate to Recruiters
                   </span>
                 </h2>
@@ -1900,11 +1899,8 @@ const FullStackDotNetDevelopment = () => {
                       </motion.div>
                     ))}
                   </div>
-                </div>
-
-                {/* Call-to-Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <motion.button
+                </div>                <div className="flex flex-col sm:flex-row gap-4">
+                     {/* <motion.button
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -1917,7 +1913,7 @@ const FullStackDotNetDevelopment = () => {
                     className="bg-white border-2 border-blue-600 text-blue-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-50"
                   >
                     Get a Sample Certificate
-                  </motion.button>
+                  </motion.button> */}
                 </div>
               </motion.div>
 
@@ -1955,7 +1951,7 @@ const FullStackDotNetDevelopment = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Career Opportunities
                 </span>
               </h2>
@@ -1994,7 +1990,7 @@ const FullStackDotNetDevelopment = () => {
                 <span className="text-xs font-semibold text-blue-700 tracking-widest">FREQUENTLY ASKED QUESTIONS</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
-                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
                   Everything you need to know
                 </span>
               </h2>
@@ -2068,7 +2064,7 @@ const FullStackDotNetDevelopment = () => {
               >
                 <div className="relative">
                 <img
-                  src="/uploads/FAQ.png"
+                  src="/uploads/FAQ (1) (1) (1).png"
                   alt="Frequently Asked Questions"
                   className="w-full h-auto object-contain max-h-[580px]"
                 />
@@ -2079,7 +2075,7 @@ const FullStackDotNetDevelopment = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500">
+        <section className="py-8 md:py-12 bg-gradient-to-r from-blue-600  to-orange-500">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -2117,7 +2113,7 @@ const FullStackDotNetDevelopment = () => {
           </div>
         </section>
 
-        <CourseTechnologySection courseSlug="full-stack-dotnet-development" />
+       
         <BranchSection />
 
         <Footer />
@@ -2127,6 +2123,8 @@ const FullStackDotNetDevelopment = () => {
 };
 
 export default FullStackDotNetDevelopment;
+
+
 
 
 
