@@ -207,17 +207,21 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Database",
       duration: "2 Weeks",
       topics: [
-        "Introduction to SQL",
-        "Data & Database Fundamentals",
-        "DBMS & RDBMS Concepts",
-        "SQL Operations & Statements",
-        "DDL, DML, TCL, DQL",
-        "Aggregate Functions",
-        "Joins & Subqueries",
-        " Triggers",
-        "Stored procedure",
-        "view",
-        "constraints"
+        "What is Data & Database",
+        "DBMS vs RDBMS & Types of DBMS",
+        "SQL Overview & Architecture",
+        "Data Types & Operators",
+        "DDL Commands (CREATE, ALTER, DROP)",
+        "DML Commands (INSERT, UPDATE, DELETE)",
+        "DCL & TCL (GRANT, REVOKE, COMMIT, ROLLBACK)",
+        "DQL & Aggregate Functions",
+        "Joins (Inner, Outer, Self, Cross)",
+        "Subqueries & Nested Queries",
+        "Constraints (PK, FK, Unique, Check)",
+        "Stored Procedures & Functions",
+        "Views & Materialized Views",
+        "Database Triggers",
+        "GROUP BY & HAVING Clauses"
       ]
     },
     {
@@ -226,12 +230,15 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Programming",
       duration: "1 Week",
       topics: [
-        "Introduction to Java",
-        "Java Features & JDK",
-        "Variables & Operators",
-        "Conditional Statements",
-        "Strings & Arrays",
-        "Loops & Control Flow"
+        "Introduction to Java, JVM & JDK",
+        "Java Data Types & Type Casting",
+        "Identifiers & Naming Conventions",
+        "Variables, Scope & Lifetime",
+        "Operators & Expressions",
+        "Control Statements (if, switch)",
+        "Loop Constructs (for, while, do-while)",
+        "Arrays & String Handling",
+        "Methods, Parameters & Return Types"
       ]
     },
     {
@@ -240,16 +247,16 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Testing",
       duration: "5 Weeks",
       topics: [
-        "Introduction to Software Testing",
-        "SDLC Models",
-        "Quality Assurance & Quality Control",
-        "Verification & Validation",
-        "Software Test Life Cycle (STLC)",
-        "Test Methods, Levels & Types",
-        "Requirements Analysis",
-        "Test Design Techniques",
-        "Defect Management",
-        "Agile Testing"
+        "Introduction & Principles of Software Testing",
+        "SDLC Models & QA vs QC",
+        "Verification & Validation Concepts",
+        "STLC Phases (Requirement to Closure)",
+        "Test Levels & Test Types",
+        "Requirement Analysis & Test Planning",
+        "Test Scenario & Test Case Design",
+        "Reviews, Walkthroughs & Inspections",
+        "Defect Life Cycle & Reporting",
+        "Test Metrics, Traceability & Reporting"
       ]
     },
     {
@@ -258,10 +265,10 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Project",
       duration: "3 Weeks",
       topics: [
-        "Real Application Testing",
-        "Test Case Documentation",
-        "Bug Reporting",
-        "Test Execution & Reporting"
+        "Application Walkthrough & Requirement Study",
+        "Test Case Documentation & Reviews",
+        "Bug Logging & Defect Triage",
+        "Test Execution, Reporting & Sign-off"
       ]
     },
     {
@@ -270,12 +277,14 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Tools",
       duration: "1 Week",
       topics: [
-        "JIRA Tool Overview",
-        "Project Management",
-        "Issue Tracking",
-        "Sprint Planning",
-        "xray Configuration",
-        "Test management "
+        "JIRA Introduction & Installation",
+        "Project Setup & Configuration",
+        "Issue Types, Workflows & Boards",
+        "Sprint Planning & Backlog Grooming",
+        "Defect Management & Reporting",
+        "Xray Installation & Configuration",
+        "Test Case Management & Traceability",
+        "Dashboards & Custom Reports"
       ]
     },
     {
@@ -284,12 +293,14 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Tools",
       duration: "1 Week",
       topics: [
-        "API Testing Fundamentals",
-        "REST API Concepts",
-        "Postman Tool",
-        "API Test Cases",
-        "Response Validations",
-        "Variables"
+        "API & Web Services Fundamentals",
+        "REST vs SOAP Architecture",
+        "Postman Workspace Setup",
+        "Request, Headers & Payload Design",
+        "API Response Validations & Assertions",
+        "Environment, Global & Collection Variables",
+        "Automating Collections & Test Suites",
+        "Documentation & Reporting"
       ]
     },
     {
@@ -298,48 +309,56 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Tools",
       duration: "1 Week",
       topics: [
-        "Performance Testing Basics",
-        "JMeter Tool Overview",
-        "Load & Stress Testing",
-        "Test Reporting",
-        "Assertions",
-        "CSV file"
+        "Performance Testing Fundamentals",
+        "JMeter Installation & UI Overview",
+        "Test Plan & Thread Group Design",
+        "Samplers, Controllers & Config Elements",
+        "Assertions, Timers & Listeners",
+        "Parameterization with CSV Data",
+        "JDBC Connectivity & Database Testing",
+        "Performance Reports & Analysis"
       ]
     },
     {
       id: "module-8",
-      title: "Selenium Java (OOP Concepts)",
-      category: "#Automation",
+      title: "Advance Java & OOPs",
+      category: "#Programming",
       duration: "2 Weeks",
       topics: [
-        "Class & Object",
-        "Inheritance",
-        "Polymorphism",
-        "Constructor",
-        "Encapsulation",
-        "Abstraction",
-        "Exception Handling"
+        "OOP Concepts & Pillars",
+        "Classes, Objects & Constructors",
+        "Method Overloading & Overriding",
+        "Inheritance (Single, Multilevel, Hierarchical)",
+        "Polymorphism (Compile-time & Runtime)",
+        "Encapsulation & Abstraction",
+        "Interfaces & Abstract Classes",
+        "this, super, static & final keywords",
+        "Exception Handling & Collections Overview"
       ]
     },
     {
       id: "module-9",
-      title: "Selenium WebDriver",
+      title: "Selenium WebDriver Automation",
       category: "#Automation",
       duration: "5 Weeks",
       topics: [
-        "Introduction to Selenium",
-        "Selenium Components",
-        "Locators & WebDrivers",
-        "Handling Pop-ups & Alerts",
-        "WebDriver Waits",
-        "Checkboxes, Radio Buttons, Dropdowns",
-        "Action Classes",
-        "Page Object Model (POM)",
-        "Data Driven Framework",
-        "TestNG Framework",
-        "Maven Integration",
-        "Keyword driven framework",
-        "hybrid driven framework"
+        "Introduction to Automation Testing",
+        "Selenium Architecture & Components",
+        "Setting Up Selenium WebDriver",
+        "Locators Strategy & WebDriver Methods",
+        "Handling Checkbox, Radio Button & Text Box",
+        "Dropdowns, Alerts & Multiple Windows",
+        "Implicit, Explicit & Fluent Waits",
+        "Actions Class & Advanced User Interactions",
+        "Screenshots, Logs & Reporting",
+        "Page Object Model & Page Factory",
+        "Data Driven Framework with Apache POI",
+        "Keyword & Hybrid Driven Frameworks",
+        "Database Testing Integration",
+        "TestNG (Annotations, Parameters, Assertions)",
+        "BDD with Cucumber Overview",
+        "Maven Build Management",
+        "Jenkins Integration for CI/CD"
       ]
     },
     {
@@ -348,20 +367,22 @@ I am interested in booking a free counselling session. Please contact me at your
       category: "#Project",
       duration: "1 Week",
       topics: [
-        "Complete Automation Framework",
-        "Test Execution",
-        "Reporting & Analysis"
+        "Framework Design End-to-End",
+        "Test Data & Environment Management",
+        "Continuous Integration Demo",
+        "Reporting, Metrics & Sign-off"
       ]
     },
     {
       id: "module-11",
-      title: "Jenkins CI/CD",
+      title: "Jenkins CI/CD Bootcamp",
       category: "#DevOps",
       duration: "4 Hours (Sundays Only)",
       topics: [
-        "Jenkins Overview",
-        "CI/CD Pipeline Setup",
-        "Automated Test Execution"
+        "Jenkins Overview & Installation",
+        "Creating & Scheduling Pipelines",
+        "Integrating Maven, TestNG & Selenium",
+        "Automated Test Execution & Reporting"
       ]
     }
   ];
@@ -674,6 +695,147 @@ I am interested in booking a free counselling session. Please contact me at your
                   <p className="text-gray-600">{item.desc}</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Course Specialization Buttons */}
+        <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
+                <span className="bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
+                  Explore Specialized Testing Courses
+                </span>
+              </h2>
+              <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+                Choose from our specialized training programs tailored to your career goals
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Manual Testing Button Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="relative group"
+              >
+                <Link to="/manual-testing">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 h-full flex flex-col">
+                    {/* Icon Badge */}
+                    <div className="relative w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                      <div className="relative flex items-center justify-center">
+                        <ClipboardList className="w-12 h-12 text-blue-600 group-hover:text-blue-700 transition-colors" strokeWidth={1.5} />
+                        <CheckCircle className="w-6 h-6 text-blue-600 -ml-2 -mt-2 group-hover:scale-110 transition-transform" strokeWidth={2} />
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                      Manual Testing
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-600 text-center mb-6 leading-relaxed flex-grow">
+                      Master the fundamentals of manual testing with comprehensive training in test case design, defect management, SDLC, STLC, and QA methodologies. Perfect for beginners starting their testing career.
+                    </p>
+
+                    {/* Features List */}
+                    <div className="space-y-2 mb-6">
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Test Case Design & Execution</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Defect Management & Reporting</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>JIRA, API Testing & JMeter</span>
+                      </div>
+                    </div>
+
+                    {/* Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      <span>Explore Manual Testing Course</span>
+                      <ChevronRight className="w-5 h-5" />
+                    </motion.div>
+                  </div>
+                </Link>
+              </motion.div>
+
+              {/* Automation Selenium Testing Button Card */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="relative group"
+              >
+                <Link to="/selenium-testing">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-orange-100 hover:border-orange-300 h-full flex flex-col">
+                    {/* Icon Badge */}
+                    <div className="relative w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                      <div className="relative flex items-center justify-center">
+                        <Code className="w-12 h-12 text-orange-600 group-hover:text-orange-700 transition-colors" strokeWidth={1.5} />
+                        <Rocket className="w-6 h-6 text-orange-600 -ml-2 -mt-2 group-hover:scale-110 transition-transform" strokeWidth={2} />
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center text-gray-800 group-hover:text-orange-600 transition-colors">
+                      Automation Selenium Testing
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-600 text-center mb-6 leading-relaxed flex-grow">
+                      Become an automation testing expert with hands-on training in Selenium WebDriver, Java, TestNG, Maven, Jenkins, and advanced automation frameworks. Ideal for advancing your testing career.
+                    </p>
+
+                    {/* Features List */}
+                    <div className="space-y-2 mb-6">
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>Selenium WebDriver & Java</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>TestNG, Maven & Jenkins CI/CD</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span>POM, Data-Driven & Hybrid Frameworks</span>
+                      </div>
+                    </div>
+
+                    {/* Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      <span>Explore Automation Testing Course</span>
+                      <ChevronRight className="w-5 h-5" />
+                    </motion.div>
+                  </div>
+                </Link>
+              </motion.div>
             </div>
           </div>
         </section>
