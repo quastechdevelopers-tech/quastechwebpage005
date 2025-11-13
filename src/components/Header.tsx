@@ -7,6 +7,7 @@ import {
   X,
   Phone,
   Mail,
+  Info,
   ChevronDown,
   Award,
   Globe,
@@ -235,8 +236,8 @@ const Header = () => {
 
   // Sidebar menu items (Contact-Us and About-Us)
   const sidebarMenuItems = [
-    { name: "Contact-Us", href: "/contact", isExternal: true },
-    { name: "About-Us", href: "/about", isExternal: true },
+    { name: "Contact-Us", href: "/contact", isExternal: true, icon: Phone },
+    { name: "About-Us", href: "/about", isExternal: true, icon: Info },
   ];
 
   const handleDropdownToggle = (categoryName: string) => {
@@ -432,7 +433,7 @@ const Header = () => {
         }}
       >
         <div className="container mx-auto px-3 sm:px-4 md:px-6">
-          <div className="flex items-center justify-between h-18 sm:h-20 md:h-24 lg:h-28">
+          <div className="flex items-center justify-between py-3 sm:py-3.5 md:py-4 lg:py-5">
             {/* Logo Section with Courses & LMS Login Buttons */}
             <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
               {/* Main QUASTECH Logo */}

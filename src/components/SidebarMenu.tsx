@@ -1,12 +1,14 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { X, ArrowRight, BookOpen, Home, Briefcase } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { createPortal } from "react-dom";
 
 interface SidebarMenuItem {
   name: string;
   href: string;
   isExternal: boolean;
+  icon?: LucideIcon;
 }
 
 interface SidebarMenuProps {
@@ -156,53 +158,58 @@ const SidebarMenu = ({ isOpen, onClose, menuItems, onCoursesClick, onCounsellorC
                   More Pages
                 </div>
                 
-                {menuItems.map((item, index) => (
-                  <motion.div
-                    key={item.name}
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2 + index * 0.08, duration: 0.25 }}
-                    className="mb-2"
-                  >
-                    {item.isExternal ? (
-                      <Link
-                        to={item.href}
-                        onClick={onClose}
-                        className="block px-4 py-3.5 rounded-lg text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-orange-50 font-medium transition-all duration-200 group border-l-4 border-transparent hover:border-blue-500 active:bg-blue-100"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="text-base">{item.name}</span>
-                          <motion.div
-                            initial={{ x: -5, opacity: 0 }}
-                            whileHover={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.2 }}
-                            className="text-blue-600"
-                          >
-                            <ArrowRight className="w-4 h-4" />
-                          </motion.div>
-                        </div>
-                      </Link>
-                    ) : (
-                      <a
-                        href={item.href}
-                        onClick={onClose}
-                        className="block px-4 py-3.5 rounded-lg text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-orange-50 font-medium transition-all duration-200 group border-l-4 border-transparent hover:border-blue-500 active:bg-blue-100"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="text-base">{item.name}</span>
-                          <motion.div
-                            initial={{ x: -5, opacity: 0 }}
-                            whileHover={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.2 }}
-                            className="text-blue-600"
-                          >
-                            <ArrowRight className="w-4 h-4" />
-                          </motion.div>
-                        </div>
-                      </a>
-                    )}
-                  </motion.div>
-                ))}
+                {menuItems.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <motion.div
+                      key={item.name}
+                      initial={{ opacity: 0, x: 30 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.2 + index * 0.08, duration: 0.25 }}
+                      className="mb-2"
+                    >
+                      {item.isExternal ? (
+                        <Link
+                          to={item.href}
+                          onClick={onClose}
+                          className="block px-4 py-3.5 rounded-lg text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-orange-50 font-medium transition-all duration-200 group border-l-4 border-transparent hover:border-blue-500 active:bg-blue-100"
+                        >
+                          <div className="flex items-center gap-3">
+                            {Icon && <Icon className="w-4 h-4 text-gray-500 group-hover:text-blue-600" />}
+                            <span className="text-base">{item.name}</span>
+                            <motion.div
+                              initial={{ x: -5, opacity: 0 }}
+                              whileHover={{ x: 0, opacity: 1 }}
+                              transition={{ duration: 0.2 }}
+                              className="text-blue-600 ml-auto"
+                            >
+                              <ArrowRight className="w-4 h-4" />
+                            </motion.div>
+                          </div>
+                        </Link>
+                      ) : (
+                        <a
+                          href={item.href}
+                          onClick={onClose}
+                          className="block px-4 py-3.5 rounded-lg text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-orange-50 font-medium transition-all duration-200 group border-l-4 border-transparent hover:border-blue-500 active:bg-blue-100"
+                        >
+                          <div className="flex items-center gap-3">
+                            {Icon && <Icon className="w-4 h-4 text-gray-500 group-hover:text-blue-600" />}
+                            <span className="text-base">{item.name}</span>
+                            <motion.div
+                              initial={{ x: -5, opacity: 0 }}
+                              whileHover={{ x: 0, opacity: 1 }}
+                              transition={{ duration: 0.2 }}
+                              className="text-blue-600 ml-auto"
+                            >
+                              <ArrowRight className="w-4 h-4" />
+                            </motion.div>
+                          </div>
+                        </a>
+                      )}
+                    </motion.div>
+                  );
+                })}
               </div>
               
               {/* Divider for future menu sections */}

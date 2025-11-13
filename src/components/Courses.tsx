@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { FormEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,7 +15,7 @@ import {
   Users,
   Star,
   ArrowRight,
-  Download,
+  PhoneCall,
   MoreHorizontal,
   Calendar,
   Briefcase,
@@ -25,6 +25,16 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 const Courses = () => {
   // Carousel features that rotate
@@ -39,7 +49,19 @@ const Courses = () => {
   const [currentCourseIndex, setCurrentCourseIndex] = useState(0);
   const [techAnimationActive, setTechAnimationActive] = useState<{ [key: number]: boolean }>({});
   const [showCounsellorForm, setShowCounsellorForm] = useState(false);
+  const [showEnrollForm, setShowEnrollForm] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState<string | null>(null);
+  const [studentName, setStudentName] = useState("");
+  const [studentPhone, setStudentPhone] = useState("");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!showEnrollForm) {
+      setSelectedCourse(null);
+      setStudentName("");
+      setStudentPhone("");
+    }
+  }, [showEnrollForm]);
 
   // Course page mapping
   const coursePageMap: { [key: string]: string } = {
@@ -51,6 +73,8 @@ const Courses = () => {
     "Data Science with AI": "/data-science-with-python",
     "Data Analytics with AI": "/ai-data-analytics"
   };
+
+  const WHATSAPP_NUMBER = "918422800381";
 
   // Define courses array first - AI-Enhanced Placement Courses
   const courses = [
@@ -185,6 +209,27 @@ const Courses = () => {
 
   const handleCourseNext = () => {
     setCurrentCourseIndex((prev) => (prev + 1) % courses.length);
+  };
+
+  const handleEnrollClick = (courseTitle: string) => {
+    setSelectedCourse(courseTitle);
+    setShowEnrollForm(true);
+  };
+
+  const handleEnrollSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!studentName.trim() || !studentPhone.trim() || !selectedCourse) {
+      alert("Please enter your name and phone number.");
+      return;
+    }
+
+    const message = encodeURIComponent(
+      `Hello, I am interested in the ${selectedCourse} course.\nName: ${studentName.trim()}\nPhone: ${studentPhone.trim()}`
+    );
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+    setShowEnrollForm(false);
   };
 
   // Toggle technology animation on hover
@@ -371,12 +416,17 @@ const Courses = () => {
                     <div className="mt-auto space-y-2 pb-3 sm:pb-4">
                       <div className="flex gap-2">
                         <Button
+                          asChild
                           variant="outline"
                           size="sm"
-                          className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 text-[10px] sm:text-xs transition-all duration-300 font-semibold min-w-0 max-w-[50%] px-1.5 py-1.5 sm:py-2 overflow-hidden"
+                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:border-green-600 text-[10px] sm:text-xs transition-all duration-300 font-semibold min-w-0 max-w-[50%] px-1.5 py-1.5 sm:py-2 overflow-hidden"
                         >
-                          <Download className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-0.5 sm:mr-1 flex-shrink-0" />
-                          <span className="relative z-10 truncate whitespace-nowrap overflow-hidden text-ellipsis">Download</span>
+                          <a href={`tel:+${WHATSAPP_NUMBER}`} className="flex items-center justify-center gap-1 sm:gap-1.5">
+                            <PhoneCall className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0" />
+                            <span className="relative z-10 truncate whitespace-nowrap overflow-hidden text-ellipsis">
+                              Call Now
+                            </span>
+                          </a>
                         </Button>
                         <Button
                           size="sm"
@@ -392,9 +442,7 @@ const Courses = () => {
                       <motion.div
                         whileHover={{ scale: 1.02, y: -1 }}
                         whileTap={{ scale: 0.98 }}
-                        onClick={() => {
-                          alert(`Enrolling in ${course.title}! We'll contact you soon.`);
-                        }}
+                        onClick={() => handleEnrollClick(course.title)}
                         className="cursor-pointer"
                       >
                         <Button
@@ -566,12 +614,17 @@ const Courses = () => {
                     <div className="mt-auto space-y-2 pb-3 md:pb-4">
                       <div className="flex gap-2">
                         <Button
+                          asChild
                           variant="outline"
                           size="sm"
-                          className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 text-[10px] md:text-xs transition-all duration-300 font-semibold min-w-0 max-w-[50%] px-1.5 py-1.5 overflow-hidden"
+                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white hover:border-green-600 text-[10px] md:text-xs transition-all duration-300 font-semibold min-w-0 max-w-[50%] px-1.5 py-1.5 overflow-hidden"
                         >
-                          <Download className="w-2.5 h-2.5 md:w-3 md:h-3 mr-0.5 flex-shrink-0" />
-                          <span className="relative z-10 truncate whitespace-nowrap overflow-hidden text-ellipsis">Download</span>
+                          <a href={`tel:+${WHATSAPP_NUMBER}`} className="flex items-center justify-center gap-1 md:gap-1.5">
+                            <PhoneCall className="w-2.5 h-2.5 md:w-3 md:h-3 flex-shrink-0" />
+                            <span className="relative z-10 truncate whitespace-nowrap overflow-hidden text-ellipsis">
+                              Call Now
+                            </span>
+                          </a>
                         </Button>
                         <Button
                           size="sm"
@@ -587,9 +640,7 @@ const Courses = () => {
                       <motion.div
                         whileHover={{ scale: 1.02, y: -1 }}
                         whileTap={{ scale: 0.98 }}
-                        onClick={() => {
-                          alert(`Enrolling in ${course.title}! We'll contact you soon.`);
-                        }}
+                        onClick={() => handleEnrollClick(course.title)}
                         className="cursor-pointer"
                       >
                     <Button
@@ -643,6 +694,65 @@ const Courses = () => {
           </div>
         </motion.div>
       </div>
+
+      <Dialog open={showEnrollForm} onOpenChange={setShowEnrollForm}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Enroll in {selectedCourse ?? "a course"}</DialogTitle>
+            <DialogDescription>
+              Share your details and we&apos;ll connect with you on WhatsApp right away.
+            </DialogDescription>
+          </DialogHeader>
+          <form onSubmit={handleEnrollSubmit} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="course-name">Course</Label>
+              <Input
+                id="course-name"
+                value={selectedCourse ?? ""}
+                readOnly
+                className="font-semibold text-primary"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="student-name">Full Name</Label>
+              <Input
+                id="student-name"
+                placeholder="Enter your full name"
+                value={studentName}
+                onChange={(event) => setStudentName(event.target.value)}
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="student-phone">Phone Number</Label>
+              <Input
+                id="student-phone"
+                type="tel"
+                placeholder="Enter your phone number"
+                value={studentPhone}
+                onChange={(event) => setStudentPhone(event.target.value)}
+                required
+              />
+            </div>
+            <DialogFooter className="flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+              <Button
+                type="submit"
+                className="w-full sm:w-auto bg-gradient-to-r from-green-500 via-green-600 to-blue-600 hover:from-green-600 hover:via-green-700 hover:to-blue-700"
+              >
+                Send on WhatsApp
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                asChild
+                className="w-full sm:w-auto border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+              >
+                <a href={`tel:+${WHATSAPP_NUMBER}`}>Call Now +{WHATSAPP_NUMBER}</a>
+              </Button>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
 
       {/* Counsellor Form Modal */}
       <CounsellorForm isOpen={showCounsellorForm} onClose={() => setShowCounsellorForm(false)} />

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DarkModeProvider } from "@/contexts/DarkModeContext";
 import { HelmetProvider } from "react-helmet-async";
 import FloatingCTA from "@/components/FloatingCTA";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Index from "./pages/Index";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
@@ -74,6 +75,7 @@ const App = () => (
           <BrowserRouter>
             {/* Global Floating CTA - Appears on all pages */}
             <FloatingCTA />
+            <ScrollToTopButton />
             <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutPage />} />
