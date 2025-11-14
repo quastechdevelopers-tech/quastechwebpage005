@@ -363,6 +363,18 @@ const upcomingDrives = [
 
 const PlacementPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== "undefined") {
+        setIsMobileView(window.innerWidth < 768);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const placementStats = [
     { icon: Users, value: "10k+", label: "Learners Trained" },
@@ -834,7 +846,7 @@ const PlacementPage = () => {
         </section>
 
         {/* 5. Recent Placements */}
-        <section className="relative bg-white py-14 px-3">
+        <section className="relative bg-white py-14 px-3 sm:px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center mb-9">
               <h2 className="heading-institute-lg flex-1 tracking-tight">Recent Placements</h2>
@@ -862,7 +874,7 @@ const PlacementPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 32 }}
                 transition={{ duration: 0.45, ease: "easeInOut" }}
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-6"
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 md:gap-6 mt-6"
               >
                 {placements.map((item, i) => (
                   <motion.div
@@ -877,20 +889,22 @@ const PlacementPage = () => {
                       transformStyle: 'preserve-3d',
                       perspective: '1000px'
                     }}
-                    whileHover={{
-                      y: -10,
-                      rotateY: 8,
-                      rotateX: -5,
-                      scale: 1.05,
-                      boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
-                      transition: { duration: 0.3 }
-                    }}
+                    whileHover={
+                      isMobileView ? undefined : {
+                        y: -10,
+                        rotateY: 8,
+                        rotateX: -5,
+                        scale: 1.05,
+                        boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+                        transition: { duration: 0.3 }
+                      }
+                    }
                   >
                     <motion.img
                       src={item.image}
                       alt={item.name}
                       className="rounded-full w-20 h-20 object-cover mb-3 border-4 border-blue-200 bg-white shadow"
-                      whileHover={{  scale: 1.1 }}
+                      whileHover={isMobileView ? undefined : {  scale: 1.1 }}
                       transition={{ duration: 0.5 }}
                     />
                     <div className="font-bold text-lg text-[#19376D] text-center mb-1">{item.name}</div>

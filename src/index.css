@@ -289,8 +289,22 @@
     @apply border-border;
   }
 
-  body {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html, body {
     @apply bg-background text-foreground;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
