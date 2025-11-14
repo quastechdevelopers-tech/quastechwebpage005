@@ -234,10 +234,11 @@ const Header = () => {
   // Main navigation items (visible in navbar) - Empty since Placement is in sidebar menu
   const navItems: { name: string; href: string; isExternal: boolean }[] = [];
 
-  // Sidebar menu items (Contact-Us and About-Us)
+  // Sidebar menu items (Contact-Us, About-Us, and Blog)
   const sidebarMenuItems = [
     { name: "Contact-Us", href: "/contact", isExternal: true, icon: Phone },
     { name: "About-Us", href: "/about", isExternal: true, icon: Info },
+    { name: "Blog", href: "/blog", isExternal: true, icon: BookOpen },
   ];
 
   const handleDropdownToggle = (categoryName: string) => {

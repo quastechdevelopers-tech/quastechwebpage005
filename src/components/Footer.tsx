@@ -138,7 +138,7 @@ const Footer = () => {
     { name: "Contact Us", href: "/contact" },
     { name: "Certificate Download", href: "#" },
     { name: "Payment Methods", href: "#" },
-    { name: "Blogs", href: "#" },
+    { name: "Blogs", href: "/blog" },
     { name: "Faq's", href: "#" }
   ];
 

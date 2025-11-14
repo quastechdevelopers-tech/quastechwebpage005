@@ -32,14 +32,14 @@ const partners: Partner[] = [
   { name: "Tech Mahindra", logo: "/images/companypng/2.png" },
   { name: "CyberTech", logo: "/images/companypng/3.png" },
   { name: "CRMNEXT", logo: "/images/companypng/4.png" },
-  { name: "AQM", logo: "/images/companypng/5.png" },
+  { name: "AQM", logo: "/images/companypng/5.png" },//
   { name: "Accenture", logo: "/images/companypng/6.png" },
   { name: "Capgemini", logo: "/images/companypng/7.png" },
   { name: "Infosys", logo: "/images/companypng/8.png" },
   { name: "Indieboon Avenues", logo: "/images/companypng/10.png" },
-  { name: "Misco", logo: "/images/companypng/11.png" },
+  { name: "Miscot", logo: "/images/companypng/11.png" },
   { name: "Auditime", logo: "/images/companypng/12.png" },
-  { name: "Plan IT", logo: "/images/companypng/13.png" },
+  { name: "Plan IT", logo: "/images/companypng/13.png" },//
   { name: "TCS", logo: "/images/companypng/14.png" },
   { name: "Immgate", logo: "/images/companypng/15.png" },
   { name: "2M Technologies", logo: "/images/companypng/16.png" },
@@ -55,7 +55,7 @@ const partners: Partner[] = [
   { name: "Adapty", logo: "/images/companypng/28.png" },
   { name: "Xanthus", logo: "/images/companypng/29.png" },
   { name: "Nimap Infotech", logo: "/images/companypng/30.png" },
-  { name: "Cateina", logo: "/images/companypng/31.png" },
+  { name: "Cateina", logo: "/images/companypng/31.png" },//
   { name: "Dell Technologies", logo: "/images/companypng/32.png" },
   { name: "Agaetis", logo: "/images/companypng/33.png" },
   { name: "CM Thoughts", logo: "/images/companypng/34.png" },

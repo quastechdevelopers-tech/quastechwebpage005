@@ -26,76 +26,96 @@ const students = [
     role: "Software Testing Engineer",
     course: "Software Testing",
     image: "/images/NewStudentReview/Dipesh sawant -Software Testing.png",
-    company:"Plan IT Company"
+    company: "Plan IT Company",
+    companyLogo: "/images/companypng/13.png" // Plan IT logo path - update manually
   },
   {
     name: "Nidhi Yelonde",
     role: "Full Stack Java Developer",
     course: "Full Stack Java Development",
     image: "/images/NewStudentReview/Nidhi Yelonde - Full stack java Development.png",
-    company:"Plan IT Company"
+    company: "Cateina Technologies",
+    companyLogo: "/images/companypng/31.png" // Cateina logo path - update manually
   },
   {
     name: "Amey Pakhare",
     role: "Software Testing Engineer",
     course: "Software Testing",
     image: "/images/NewStudentReview/Amey Pakhare-Software Testing.png",
-    company:"Plan IT Company"
+    company: "Technopurple Company",
+    companyLogo: "/images/companypng/TECHNOPURPLE.png" // Technopurple logo path - add manuallyD:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\TECHNOPURPLE.png
   },
   {
     name: "Ashish Raut",
     role: "Software Testing Engineer",
     course: "Software Testing",
     image: "/images/NewStudentReview/ashish raut -Software Testing.png",
-    company:"Plan IT Company"
+    company: "Greeksoft Technologies Private Limited",
+    companyLogo: "/images/companypng/GREEKSOFT.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\GREEKSOFT.png
   },
   {
     name: "Karishma Yadav",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/karishma yadav - Software Testing.png"
+    image: "/images/NewStudentReview/karishma yadav - Software Testing.png",
+    company: "Reeble Platform India Private Limited",
+    companyLogo: "/images/companypng/REEBLE.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\REEBLE.png
   },
   {
     name: "Prashant Karande",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Prashant Karande -Software Testing.png"
+    image: "/images/NewStudentReview/Prashant Karande -Software Testing.png",
+    company: "AQM Technologies Pvt. Ltd.",
+    companyLogo: "/images/companypng/5.png" // AQM logo path - update manually
   },
   {
     name: "Yesh Mhatre",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Yesh Mhatre -Software Testing.png"
+    image: "/images/NewStudentReview/Yesh Mhatre -Software Testing.png",
+    company: "Rentokil PCI",
+    companyLogo: "/images/companypng/rentokilpcl01.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\rentokilpcl01.png
   },
   {
     name: "Akshay Patil",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Akshay patil -Software Testing.png"
+    image: "/images/NewStudentReview/Akshay patil -Software Testing.png",
+    company: "Word Publishing",
+    companyLogo: "/images/companypng/placeholder.png" // Word Publishing logo path - add manually
   },
   {
     name: "Barkha Tiwari",
     role: "Java Developer",
     course: "Java Development",
-    image: "/images/NewStudentReview/Barkha Tiwari - Java Development.png"
+    image: "/images/NewStudentReview/Barkha Tiwari - Java Development.png",
+    company: "Mobicule Technologies Pvt. Ltd.",
+    companyLogo: "/images/companypng/mobicule01.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\mobicule01.png
   },
   {
     name: "Kanchan Rane",
     role: "Java Developer",
     course: "Java Development",
-    image: "/images/NewStudentReview/Kanchan Rane - Java Developer.png"
+    image: "/images/NewStudentReview/Kanchan Rane - Java Developer.png",
+    company: "Miscot Systems Pvt. Ltd.",
+    companyLogo: "/images/companypng/11.png" // Miscot Systems logo path - add manually
   },
   {
     name: "Mahalaxmi Karthesan",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Mahalaxmi Karthesan -Software Testing.png"
+    image: "/images/NewStudentReview/Mahalaxmi Karthesan -Software Testing.png",
+    company: "Planit Testing India Pvt Ltd",
+    companyLogo: "/images/companypng/13.png" // Planit Testing logo path - add manually
   },
   {
     name: "Mayur Hedau",
     role: "Java Developer",
     course: "Java Development",
-    image: "/images/NewStudentReview/Mayur Hedau- Java Developer.png"
+    image: "/images/NewStudentReview/Mayur Hedau- Java Developer.png",
+    company: "MITR Learning & Media",
+    companyLogo: "/images/companypng/MITR.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\MITR.png
   },
   {
     name: "Parav Thakur",
@@ -107,19 +127,41 @@ const students = [
     name: "Rohan Kute",
     role: ".NET Developer",
     course: ".NET Development",
-    image: "/images/NewStudentReview/Rohan Kute - .Net Development.png"
+    image: "/images/NewStudentReview/Rohan Kute - .Net Development.png",
+    company: "Domex Technical Information Pvt Ltd",
+    companyLogo: "/images/companypng/DOMAXX.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\DOMAXX.png
   },
   {
     name: "Roshni Pathak",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Roshni Pathak - Software Testing.png"
+    image: "/images/NewStudentReview/Roshni Pathak - Software Testing.png",
+    company: "Quantique Metadata Private Limited",
+    companyLogo: "/images/companypng/placeholder.png" // Quantique Metadata logo path - add manually
   },
   {
     name: "Sarjerao Patil",
     role: "Software Testing Engineer",
     course: "Software Testing",
-    image: "/images/NewStudentReview/Sarjerao Patil  -Software Testing.png"
+    image: "/images/NewStudentReview/Sarjerao Patil  -Software Testing.png",
+    company: "BarrierBreak Solutions Private Limited",
+    companyLogo: "/images/companypng/placeholder.png" // BarrierBreak Solutions logo path - add manually
+  },
+  {
+    name: "Viraj Bagul",
+    role: "QA Tester",
+    course: "Digital marketing Intern",
+    image: "/images/NewStudentReview/Viraj Bagul - Digital marketing Intern - Universal Mediaa.png", // Add image path manually
+    company: "Universal Mediaa",
+    companyLogo: "/images/companypng/30.png" // Nimap Infotech logo path  D:\quaastechwebsite005\quastechwebpagev04-main\public\images\NewStudentReview\Viraj Bagul - Digital marketing Intern - Universal Mediaa.png
+  },
+  {
+    name: "Trishali Mahesh Raut",
+    role: " QA Tester",
+    course: "Software Testing",
+    image: "/images/NewStudentReview/Trishali Mahesh Raut - QA Tester - SEQURETEK Pvt Ltd.png", // Add image path manually
+    company: "Mobicule Technologies Pvt. Ltd.",
+    companyLogo: "/images/companypng/mobicule01.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\NewStudentReview\Trishali Mahesh Raut - QA Tester - SEQURETEK Pvt Ltd.png
   },
   // Additional students for variety (keeping some old ones for more content)
   {
@@ -191,13 +233,15 @@ const placementCategories = [
 
 const getPlacements = (category) => {
   if(category === 'all') {
-    // Show first 16 students (all NewStudentReview images)
-    return students.slice(0, 16).map((student) => ({
+    // Show first 18 students (including the 2 new ones)
+    return students.slice(0, 18).map((student) => ({
       name: student.name,
       role: student.role,
       image: student.image,
-      company:student.company
-      //  company: companyList[i % companyList.length],
+      company: student.company ? {
+        name: student.company,
+        logo: student.companyLogo || companyList.find(c => c.name.toLowerCase().includes(student.company?.toLowerCase().split(' ')[0] || ''))?.logo
+      } : companyList[0]
     }));
   } else if (category === 'software-testing') {
     // Software Testing: All students who completed Software Testing course
@@ -850,11 +894,29 @@ const PlacementPage = () => {
                       transition={{ duration: 0.5 }}
                     />
                     <div className="font-bold text-lg text-[#19376D] text-center mb-1">{item.name}</div>
-                    <div className="text-[13px] text-blue-900 font-semibold text-center mb-2" style={{minHeight:'16px'}}>{item.role}</div>
-                    <div className="flex items-center gap-2 mt-2">
-                      {item.company?.logo && <img src={item.company.logo} alt={item.company.name} className="h-6 w-6 rounded bg-white border border-gray-200 shadow-sm" />}
-                      <span className="text-xs text-blue-700 font-semibold">{item.company?.name}</span>
-                    </div>
+                    <div className="text-[13px] text-blue-900 font-semibold text-center mb-3" style={{minHeight:'16px'}}>{item.role}</div>
+                    {/* Company Logo - Below student info */}
+                    {(() => {
+                      // Find student data to get company logo
+                      const studentData = students.find(s => s.name === item.name);
+                      const logoPath = studentData?.companyLogo || item.company?.logo;
+                      const companyName = studentData?.company || item.company?.name;
+                      
+                      return logoPath && companyName ? (
+                        <div className="flex flex-col items-center gap-2 mt-auto pt-2 border-t border-gray-100 w-full">
+                          <img 
+                            src={logoPath} 
+                            alt={companyName} 
+                            className="h-12 md:h-14 w-auto max-w-[140px] object-contain rounded bg-white border border-gray-200 shadow-sm p-1"
+                            onError={(e) => {
+                              // Fallback if image doesn't exist
+                              e.currentTarget.style.display = 'none';
+                            }}
+                          />
+                          <span className="text-[10px] text-gray-600 font-medium text-center leading-tight px-1">{companyName}</span>
+                        </div>
+                      ) : null;
+                    })()}
                   </motion.div>
                 ))}
             </motion.div>

@@ -1388,7 +1388,7 @@ const JavaDevelopmentTraining = () => {
           </div>
         </section>
 
-        {/* Hiring Partners Section */}
+       {/* Hiring Partners Section */}
         <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-[2fr_1fr] gap-12 max-w-7xl mx-auto">
@@ -1408,112 +1408,122 @@ const JavaDevelopmentTraining = () => {
                   </h2>
                 </motion.div>
 
-                {/* Three Columns with Different Scroll Speeds */}
-                <div className="grid grid-cols-3 gap-4 relative overflow-hidden">
-                  {/* Column 1 - Fastest Speed */}
-                  <div className="relative overflow-hidden h-[600px]">
-                    <motion.div
-                      className="flex flex-col gap-4"
-                      animate={{ y: [0, -800] }}
-                      transition={{
-                        y: {
-                          repeat: Infinity,
-                          duration: 20,
-                          ease: "linear",
-                        },
-                      }}
-                    >
-                      {/* Duplicate logos for seamless loop */}
-                      {[
-                        ...partners,
-                        ...partners,
-                        ...partners,
-                        ...partners
-                      ].map((partner, index) => (
-                        <div
-                          key={`col1-${index}`}
-                          className="flex-shrink-0 h-32 bg-white border border-gray-200 rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow"
+                {/* Split partners into three unique groups */}
+                {(() => {
+                  const total = partners.length;
+                  const col1 = partners.slice(0, Math.ceil(total / 3));
+                  const col2 = partners.slice(col1.length, col1.length + Math.ceil((total - col1.length) / 2));
+                  const col3 = partners.slice(col1.length + col2.length);
+                  
+                  return (
+                    <div className="grid grid-cols-3 gap-2 md:gap-3 relative overflow-hidden">
+                      {/* Column 1 - Fastest Speed */}
+                      <div className="relative overflow-hidden h-[500px]">
+                        <motion.div
+                          className="flex flex-col gap-2"
+                          animate={{ y: [0, -600] }}
+                          transition={{
+                            y: {
+                              repeat: Infinity,
+                              duration: 20,
+                              ease: "linear",
+                            },
+                          }}
                         >
-                          <img
-                            src={partner.logo}
-                            alt={partner.name}
-                            className="max-h-20 max-w-full object-contain transition-all duration-300"
-                          />
-                        </div>
-                      ))}
-                    </motion.div>
-                  </div>
+                          {/* Duplicate logos for seamless loop */}
+                          {[
+                            ...col1,
+                            ...col1,
+                            ...col1,
+                            ...col1
+                          ].map((partner, index) => (
+                            <div
+                              key={`col1-${index}`}
+                              className="flex-shrink-0 h-16 bg-white border border-gray-200 rounded-md flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300"
+                            >
+                              <img
+                                src={partner.logo}
+                                alt={partner.name}
+                                className="max-h-10 max-w-full object-contain transition-all duration-300"
+                                title={partner.name}
+                              />
+                            </div>
+                          ))}
+                        </motion.div>
+                      </div>
 
-                  {/* Column 2 - Medium Speed */}
-                  <div className="relative overflow-hidden h-[600px]">
-                    <motion.div
-                      className="flex flex-col gap-4"
-                      animate={{ y: [0, -800] }}
-                      transition={{
-                        y: {
-                          repeat: Infinity,
-                          duration: 30,
-                          ease: "linear",
-                        },
-                      }}
-                    >
-                      {/* Duplicate logos for seamless loop */}
-                      {[
-                        ...partners.slice(1),
-                        ...partners,
-                        ...partners,
-                        ...partners,
-                        ...partners.slice(0, 1)
-                      ].map((partner, index) => (
-                        <div
-                          key={`col2-${index}`}
-                          className="flex-shrink-0 h-32 bg-white border border-gray-200 rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow"
+                      {/* Column 2 - Medium Speed */}
+                      <div className="relative overflow-hidden h-[500px]">
+                        <motion.div
+                          className="flex flex-col gap-2"
+                          animate={{ y: [0, -600] }}
+                          transition={{
+                            y: {
+                              repeat: Infinity,
+                              duration: 30,
+                              ease: "linear",
+                            },
+                          }}
                         >
-                          <img
-                            src={partner.logo}
-                            alt={partner.name}
-                            className="max-h-20 max-w-full object-contain transition-all duration-300"
-                          />
-                        </div>
-                      ))}
-                    </motion.div>
-                  </div>
+                          {/* Duplicate logos for seamless loop */}
+                          {[
+                            ...col2,
+                            ...col2,
+                            ...col2,
+                            ...col2
+                          ].map((partner, index) => (
+                            <div
+                              key={`col2-${index}`}
+                              className="flex-shrink-0 h-16 bg-white border border-gray-200 rounded-md flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-orange-300 transition-all duration-300"
+                            >
+                              <img
+                                src={partner.logo}
+                                alt={partner.name}
+                                className="max-h-10 max-w-full object-contain transition-all duration-300"
+                                title={partner.name}
+                              />
+                            </div>
+                          ))}
+                        </motion.div>
+                      </div>
 
-                  {/* Column 3 - Slowest Speed */}
-                  <div className="relative overflow-hidden h-[600px]">
-                    <motion.div
-                      className="flex flex-col gap-4"
-                      animate={{ y: [0, -800] }}
-                      transition={{
-                        y: {
-                          repeat: Infinity,
-                          duration: 40,
-                          ease: "linear",
-                        },
-                      }}
-                    >
-                      {/* Duplicate logos for seamless loop */}
-                      {[
-                        ...partners.slice(2),
-                        ...partners,
-                        ...partners,
-                        ...partners,
-                        ...partners.slice(0, 2)
-                      ].map((partner, index) => (
-                        <div
-                          key={`col3-${index}`}
-                          className="flex-shrink-0 h-32 bg-white border border-gray-200 rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow"
+                      {/* Column 3 - Slowest Speed */}
+                      <div className="relative overflow-hidden h-[500px]">
+                        <motion.div
+                          className="flex flex-col gap-2"
+                          animate={{ y: [0, -600] }}
+                          transition={{
+                            y: {
+                              repeat: Infinity,
+                              duration: 40,
+                              ease: "linear",
+                            },
+                          }}
                         >
-                          <img
-                            src={partner.logo}
-                            alt={partner.name}
-                            className="max-h-20 max-w-full object-contain transition-all duration-300"
-                          />
-                        </div>
-                      ))}
-                    </motion.div>
-                  </div>
-                </div>
+                          {/* Duplicate logos for seamless loop */}
+                          {[
+                            ...col3,
+                            ...col3,
+                            ...col3,
+                            ...col3
+                          ].map((partner, index) => (
+                            <div
+                              key={`col3-${index}`}
+                              className="flex-shrink-0 h-16 bg-white border border-gray-200 rounded-md flex items-center justify-center p-2 shadow-sm hover:shadow-md hover:border-purple-300 transition-all duration-300"
+                            >
+                              <img
+                                src={partner.logo}
+                                alt={partner.name}
+                                className="max-h-10 max-w-full object-contain transition-all duration-300"
+                                title={partner.name}
+                              />
+                            </div>
+                          ))}
+                        </motion.div>
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Right Column - Statistics */}

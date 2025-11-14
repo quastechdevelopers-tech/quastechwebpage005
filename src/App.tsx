@@ -63,6 +63,16 @@ import QuastechDegreeProgram from "./pages/QuastechDegreeProgram";
 // Quick Links Pages
 import PlacementPage from "./pages/PlacementPage";
 
+// Blog Pages
+import BlogPage from "./pages/BlogPage";
+import WhatIsSEO from "./pages/blog/WhatIsSEO";
+import GoogleAnalyticsBlog from "./pages/blog/GoogleAnalyticsBlog";
+import AffiliateMarketingBlog from "./pages/blog/AffiliateMarketingBlog";
+import SocialMediaMarketingBlog from "./pages/blog/SocialMediaMarketingBlog";
+import WhatIsTableau from "./pages/blog/WhatIsTableau";
+import WhatIsSearchEngineMarketing from "./pages/blog/WhatIsSearchEngineMarketing";
+import WhatIsPPC from "./pages/blog/WhatIsPPC";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -131,6 +141,16 @@ const App = () => (
           
           {/* Quick Links Pages */}
           <Route path="/placement" element={<PlacementPage />} />
+          
+          {/* Blog Pages */}
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/what-is-seo" element={<WhatIsSEO />} />
+          <Route path="/blog/google-analytics-google-search-blog" element={<GoogleAnalyticsBlog />} />
+          <Route path="/blog/affiliate-marketing-blog" element={<AffiliateMarketingBlog />} />
+          <Route path="/blog/social-media-marketing-blog" element={<SocialMediaMarketingBlog />} />
+          <Route path="/blog/what-is-tableau" element={<WhatIsTableau />} />
+          <Route path="/blog/what-is-search-engine-marketing" element={<WhatIsSearchEngineMarketing />} />
+          <Route path="/blog/what-is-ppc" element={<WhatIsPPC />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

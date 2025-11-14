@@ -105,6 +105,25 @@ const SidebarMenu = ({ isOpen, onClose, menuItems, onCoursesClick, onCounsellorC
                     </div>
                   </Link>
                 </motion.div>
+
+                {/* Blog Link */}
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.12, duration: 0.25 }}
+                  className="mt-2"
+                >
+                  <Link
+                    to="/blog"
+                    onClick={onClose}
+                    className="block px-4 py-3.5 rounded-lg text-gray-800 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-orange-50 font-medium transition-all duration-200 group border-l-4 border-transparent hover:border-blue-500 active:bg-blue-100"
+                  >
+                    <div className="flex items-center gap-3">
+                      <BookOpen className="w-4 h-4 text-gray-500 group-hover:text-blue-600" />
+                      <span className="text-base">Blog</span>
+                    </div>
+                  </Link>
+                </motion.div>
               </div>
 
               {/* Courses Button */}
