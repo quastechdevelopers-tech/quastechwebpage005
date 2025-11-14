@@ -83,7 +83,7 @@ const students = [
     course: "Software Testing",
     image: "/images/NewStudentReview/Akshay patil -Software Testing.png",
     company: "Word Publishing",
-    companyLogo: "/images/companypng/placeholder.png" // Word Publishing logo path - add manually
+    companyLogo: "/images/companypng/WP.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\WP.png
   },
   {
     name: "Barkha Tiwari",
@@ -137,7 +137,7 @@ const students = [
     course: "Software Testing",
     image: "/images/NewStudentReview/Roshni Pathak - Software Testing.png",
     company: "Quantique Metadata Private Limited",
-    companyLogo: "/images/companypng/placeholder.png" // Quantique Metadata logo path - add manually
+    companyLogo: "/images/companypng/quantique.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\quantique.png
   },
   {
     name: "Sarjerao Patil",
@@ -145,7 +145,7 @@ const students = [
     course: "Software Testing",
     image: "/images/NewStudentReview/Sarjerao Patil  -Software Testing.png",
     company: "BarrierBreak Solutions Private Limited",
-    companyLogo: "/images/companypng/placeholder.png" // BarrierBreak Solutions logo path - add manually
+    companyLogo: "/images/companypng/barrierbreak.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\barrierbreak.png
   },
   {
     name: "Viraj Bagul",
