@@ -330,7 +330,8 @@ const About = () => {
           </motion.div> */}
 
           {/* UNIFIED WHY US SECTION */}
-          <div className="section-unified">
+          <div className="section-unified pb-6 md:pb-8">
+
             <div className="section-header -mt-4">
               <div className="inline-flex items-center gap-2 px-5 md:px-6 py-2 mb-5 md:mb-6 rounded-full bg-gradient-to-r from-blue-500 to-orange-400 shadow-lg text-white text-sm md:text-base font-semibold">
                 <Sparkles className="w-4 h-4 md:w-5 md:h-5" />

@@ -20,6 +20,7 @@ const ScrollToTopButton = () => {
     setShowExhaust(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
+    
     setTimeout(() => {
       setShowExhaust(false);
     }, 1000);
