@@ -519,6 +519,10 @@ I am interested in booking a free counselling session. Please contact me at your
                 </motion.div>
 
                 {/* Course Details Section */}
+
+
+
+                
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

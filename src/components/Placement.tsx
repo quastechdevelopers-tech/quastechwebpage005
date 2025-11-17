@@ -142,7 +142,12 @@ const Placement = () => {
               <Briefcase className="w-4 h-4 md:w-5 md:h-5" />
               PLACEMENT SUCCESS
             </div>
-            <Subtitle text="Quastech Stats at a Glance" />
+            <h3 className="text-2xl md:text-4xl lg:text-5xl font-extrabold
+               bg-gradient-to-r from-blue-500 to-orange-400
+               bg-clip-text text-transparent mb-3">
+  Quastech Stats at a Glance
+</h3>
+
             {/* <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" /> */}
           </motion.div>
 

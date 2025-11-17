@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showExhaust, setShowExhaust] = useState(false);
+  const [launchRocket, setLaunchRocket] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +19,17 @@ const ScrollToTopButton = () => {
 
   const handleClick = () => {
     setShowExhaust(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
 
-    
+    // ⏳ Delay rocket launch for realism
+    setTimeout(() => {
+      setLaunchRocket(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 200); // ADJUST FOR TIMING (150–300ms looks best)
+
+    // Turn everything off after 1s
     setTimeout(() => {
       setShowExhaust(false);
+      setLaunchRocket(false);
     }, 1000);
   };
 
@@ -42,7 +49,7 @@ const ScrollToTopButton = () => {
             aria-label="Scroll to top"
             className="relative flex flex-col items-center justify-center"
           >
-            {/* 🚀 Rocket — EDIT SIZE + LEFT/RIGHT HERE */}
+            {/* 🚀 Rocket */}
             <motion.img
               src="/rocketscrollup/rocketup.png"
               alt="Scroll to top"
@@ -53,11 +60,11 @@ const ScrollToTopButton = () => {
                 md:-ml-[30px] 
                 object-contain
               "
-              animate={showExhaust ? { y: -6 } : { y: 0 }}
-              transition={{ duration: 0.3 }}
+              animate={launchRocket ? { y: -20 } : { y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             />
 
-            {/* 🔥 Exhaust — EDIT SIZE + LEFT/RIGHT + VERTICAL SPACING HERE */}
+            {/* 🔥 Exhaust */}
             <AnimatePresence>
               {showExhaust && (
                 <motion.img
@@ -74,7 +81,7 @@ const ScrollToTopButton = () => {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.5 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.25 }}
                 />
               )}
             </AnimatePresence>

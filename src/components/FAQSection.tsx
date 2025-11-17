@@ -52,7 +52,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="section-spacing-compact container-padding bg-gradient-to-b from-blue-50 via-white to-orange-50 pb-4 md:pb-6 pt-8 md:pt-10">
+    <section id="faq"   className="section-spacing-compact container-padding bg-gradient-to-b from-blue-50 via-white to-orange-50 pb-4 md:pb-6 pt-2 md:pt-4">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-8 md:mb-10 mt-3 md:mt-4">
@@ -60,7 +60,9 @@ const FAQSection = () => {
             <HelpCircle className="w-4 h-4 md:w-5 md:h-5" />
             FAQ
           </div>
-          <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold 
+               bg-gradient-to-r from-blue-500 to-orange-400 
+               bg-clip-text text-transparent mb-3"   >
             Your Questions Answered
           </h2>
           <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />

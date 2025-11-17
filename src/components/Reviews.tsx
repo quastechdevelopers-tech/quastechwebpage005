@@ -275,7 +275,9 @@ const Reviews = () => {
             <Star className="w-4 h-4 md:w-5 md:h-5" />
             SUCCESS STORIES
           </div>
-          <h2 className="heading-section gradient-text-primary mb-3 md:mb-4">
+          <h2  className="text-2xl md:text-4xl lg:text-5xl font-extrabold 
+               bg-gradient-to-r from-blue-500 to-orange-400 
+               bg-clip-text text-transparent mb-3">
             Alumni Transforming Their Careers
           </h2>
           <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" />
@@ -291,7 +293,9 @@ const Reviews = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-6">
             <div className="text-center md:text-left">
               <p className="uppercase tracking-[0.25em] text-xs font-semibold text-blue-600 mb-1">Featured Stories</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Hear From Our Standout Alumni</h3>
+              <h3   className="text-2xl md:text-3xl font-bold 
+             bg-gradient-to-r from-blue-500 to-orange-400 
+             bg-clip-text text-transparent">Hear From Our Standout Alumni</h3>
             </div>
             <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 md:gap-4 w-full md:w-auto">
               {stats.map((stat) => (
@@ -385,7 +389,9 @@ const Reviews = () => {
         >
           <div className="text-center mb-5 md:mb-6 max-w-2xl mx-auto">
             <p className="uppercase tracking-[0.25em] text-xs font-semibold text-blue-600 mb-1">Student Voices</p>
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">What Learners Say About QUASTECH</h3>
+            <h3  className="text-2xl md:text-3xl font-bold 
+             bg-gradient-to-r from-blue-500 to-orange-400 
+             bg-clip-text text-transparent">What Learners Say About QUASTECH</h3>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5 max-w-7xl mx-auto">
